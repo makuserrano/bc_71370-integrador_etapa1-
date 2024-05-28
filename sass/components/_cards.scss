@@ -2,7 +2,6 @@
     width: 220px;
     max-width: 300px;
     height: 400px;
-    background-color: orange;
     overflow: hidden;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -23,43 +22,16 @@
         object-fit: cover;
     }
 
-    &:hover &__image, 
-    &:focus &__image {
-        transform: scale(1.4) rotate(5deg);
-        transform-origin: center;
-    }
+   
 
-    &:nth-child(5n + 1) {
-        background-image: linear-gradient(to top, #aaafad 0%, #60efff 100%);
-    }
-    
-    &:nth-child(5n + 2) {
-        background-image: linear-gradient(to top, #696eff 0%, #f8accf 100%);
-    }
-    
-    &:nth-child(5n + 3) {
-        background-image: linear-gradient(to top, #ff1b6b 0%, #34caff 100%);
-    }
-
-    &:nth-child(5n + 4) {
-        background-image: linear-gradient(to top, #ff930f 0%, #fff95b 100%);
-    }
-
-    &:nth-child(5n + 5) {
-        background-image: linear-gradient(to top, #ff0f7b 0%, #f89b29 100%);
-    }
+ 
 
     &__image-container {
         height: 200px;
-        background-color: blue;
         overflow: hidden;
-        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px); /* Estado inicial */
     }
 
-    &:hover &__image-container,
-    &:focus &__image-container {
-        clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); /* Estado final */
-    }
+   
 
     /* ----------------------------------------- */
 
@@ -76,14 +48,9 @@
 
         & &__image-container { /* .card .card__image-container */
             width: 40%;
-            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%); /* Estado inicial */
         }
 
-        &:hover &__image-container,
-        &:focus &__image-container {
-            width: 40%;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Estado final */
-        }
+       
 
     }
 
