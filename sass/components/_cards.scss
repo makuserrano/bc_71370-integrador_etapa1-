@@ -1,80 +1,76 @@
-.main-background{
-    position: relative;
-    &__img {
-        width: 100%;
-        height: 50rem;
-        object-fit: cover;
-} 
-    &__h2{
-        position: absolute;
-        top:40%;
-        color: aliceblue;
-        left: 20%;
-        
-    }
-    &__p {
-        position: absolute;
-        top:50%;
-        left: 20%;
-        color: aliceblue;
-
-        
-    }
+.main-background {
+  position: relative;
+  &__img {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+  }
+  &__h2 {
+    position: absolute;
+    font-size: 5rem;
+    top: 40%;
+    color: aliceblue;
+    left: 10%;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  &__p {
+    font-size: 1rem;
+    position: absolute;
+    top: 55%;
+    left: 11%;
+    color: aliceblue;
+    font-style: italic;
+    font-weight: 500;
+  }
 }
 .card {
-    width: 220px;
-    max-width: 300px;
-    height: 400px;
+  width: 220px;
+  max-width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.2s; /* ! No puede ser all */
+
+  &:hover,
+  &:focus {
+    transform: scale(1.03) skew(0) rotate(2deg);
+    transform-origin: bottom;
+    box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__image-container {
+    height: 200px;
     overflow: hidden;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    box-shadow: 0px 1px 5px 0px rgba(0 ,0 ,0 ,0.3);
+  }
 
-    transition: all .2s; /* ! No puede ser all */
+  /* ----------------------------------------- */
 
-    &:hover,
-    &:focus {
-        transform: scale(1.03) skew(0) rotate(2deg);
-        transform-origin: bottom;
-        box-shadow: 0px 7px 8px 0px rgba(0 ,0 ,0 ,0.5);
+  @media (max-width: 768px) {
+    & {
+      /* .card */
+      min-width: 400px;
+      max-width: 500px;
+      height: 200px;
     }
 
-    &__image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    &__article {
+      /* .card__article */
+      display: flex;
     }
 
-   
-
- 
-
-    &__image-container {
-        height: 200px;
-        overflow: hidden;
+    & &__image-container {
+      /* .card .card__image-container */
+      width: 40%;
     }
-
-   
-
-    /* ----------------------------------------- */
-
-    @media (max-width: 768px) {
-        & { /* .card */
-            min-width: 400px;
-            max-width: 500px;
-            height: 200px;
-        }
-
-        &__article { /* .card__article */
-            display: flex;
-        }
-
-        & &__image-container { /* .card .card__image-container */
-            width: 40%;
-        }
-
-       
-
-    }
-
+  }
 }

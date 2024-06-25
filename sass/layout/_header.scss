@@ -5,7 +5,8 @@
 .main-header {
   display: flex;
   flex-direction: column;
-
+  
+  background-color: white;
   @media (max-width: 768px) {
     & {
       /* .main-header */
@@ -32,7 +33,9 @@
     display: flex;
     list-style-type: none;
     justify-content: center;
-
+    background-color: #034C8C;
+    color: #BFA004;
+    
     @media (max-width: 768px) {
       & {
         flex-direction: column;
@@ -48,6 +51,8 @@
     display: block;
     padding: 1rem 2rem;
     text-decoration: none;
+    color: white;
+
   }
 
   @media (max-width: 768px) {
@@ -68,8 +73,13 @@
   align-items: center;
   height: 4rem;
   position: relative;
-  margin:  0 1rem 1rem;
+  margin:  .4rem ;
+  &__form-label{
+  color: #034C8C;
+  font-weight: 650;
 
+    padding-right: 1rem;
+  }
   &__logo-container {
     /* .search-bar__logo-container */
     
@@ -85,23 +95,32 @@
 
   &__form-container {
     padding: 1rem;
-
     display: flex;
     flex-basis: 100%;
     justify-content: center;
   }
 
   &__form-search {
-    width: 70%;
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid black;
   }
 
   &__form-submit {
-    color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: .2rem .6rem;
+    margin-left: 1rem;
+    border: 1px solid black;
+    cursor: pointer;
   }
 
   &__carrito-container {
     flex: 0 0 2rem; /* shorthand (grow shrink basis */
     align-items: center;
+    color: white !important;
+   
   }
 }
 

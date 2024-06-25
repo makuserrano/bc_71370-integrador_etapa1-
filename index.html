@@ -7,27 +7,8 @@
     <link rel="icon" href="/public/svg/iconos/marca-1.ico" />
   </head>
   <body>
+    <!-- .nav-bar -->
     <header class="main-header">
-      <input type="checkbox" id="menu" />
-
-      <nav class="nav-bar">
-        <ul class="nav-bar__nav-list">
-          <li class="nav-bar__nav-item">
-            <a href="#" class="nav-bar__nav-link">Inicio</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="#" class="nav-bar__nav-link">Alta</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="#" class="nav-bar__nav-link">Nosotros</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="#" class="nav-bar__nav-link">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- .nav-bar -->
-
       <div class="search-bar">
         <div class="search-bar__logo-container">
           <img
@@ -37,7 +18,7 @@
           />
         </div>
         <form action="#" class="search-bar__form-container">
-          <label for="busqueda" class="search-bar__form-label">Buscar</label>
+          <label for="busqueda" class="search-bar__form-label"></label>
           <input type="search" class="search-bar__form-search" id="busqueda" />
           <input type="submit" class="search-bar__form-submit" value="Buscar" />
         </form>
@@ -58,12 +39,33 @@
       </div>
       <!-- .search-bar -->
     </header>
+    <input type="checkbox" id="menu" />
+
+    <nav class="nav-bar">
+      <ul class="nav-bar__nav-list">
+        <li class="nav-bar__nav-item">
+          <a href="#" class="nav-bar__nav-link">Inicio</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="#" class="nav-bar__nav-link">Alta</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="#" class="nav-bar__nav-link">Nosotros</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="#" class="nav-bar__nav-link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+ 
     <!-- main-header -->
 
     <main>
       <div class="main-background">
         <h2 class="main-background__h2">ALLIANCE ENERGY</h2>
-        <p class="main-background__p">Conectando el mundo a través del poder del mar.</p>
+        <p class="main-background__p">
+          Conectando el mundo a través del poder del mar.
+        </p>
         <img
           src="/public/svg/oil-platform-background.jpg"
           class="main-background__img"
