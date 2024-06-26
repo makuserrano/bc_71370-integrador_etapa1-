@@ -1,6 +1,9 @@
 .footer {
     color: var(--color-primary);
     padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   
   .footer-inner {
