@@ -34,7 +34,7 @@
     list-style-type: none;
     justify-content: center;
     background-color: #034C8C;
-    color: #BFA004;
+    
     
     @media (max-width: 768px) {
       & {
@@ -75,7 +75,7 @@
   position: relative;
   margin:  .4rem ;
   &__form-label{
-  color: #034C8C;
+  color: var(--color-primary);
   font-weight: 650;
 
     padding-right: 1rem;

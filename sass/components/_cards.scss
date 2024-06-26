@@ -1,3 +1,5 @@
+
+
 .main-background {
   position: relative;
   &__img {
@@ -24,6 +26,7 @@
     font-weight: 500;
   }
 }
+
 .card {
   width: 220px;
   max-width: 300px;
@@ -32,15 +35,12 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
-
   transition: all 0.2s; /* ! No puede ser all */
+  background-color: #f1f2f3;
+  margin-top: 1.4REM;
 
-  &:hover,
-  &:focus {
-    transform: scale(1.03) skew(0) rotate(2deg);
-    transform-origin: bottom;
-    box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.5);
-  }
+ 
+
 
   &__image {
     width: 100%;
@@ -49,8 +49,14 @@
   }
 
   &__image-container {
-    height: 200px;
+    height: 220px;
     overflow: hidden;
+  }
+  &__article{
+    background-color: #f1f2f3;  
+
+    text-align: center;
+    margin: auto;
   }
 
   /* ----------------------------------------- */
