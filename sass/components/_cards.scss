@@ -141,9 +141,7 @@
   .card {
     max-width: 100%; /* Ocupar todo el ancho disponible */
     margin: 1rem auto; /* Ajuste de margen inferior e inferior */
-    &__header{
-      margin: 2rem;
-    }
+    
     &__image-container {
       height: 180px; /* Reducir la altura para dispositivos móviles */
     }
