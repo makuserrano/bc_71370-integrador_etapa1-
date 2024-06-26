@@ -12,24 +12,28 @@
         <nav class="nav-bar">
           <ul class="nav-bar__nav-list">
             <li class="nav-bar__nav-item">
-              <a href="#" class="nav-bar__nav-link">Inicio</a>
+              <a href="/index.html" class="nav-bar__nav-link">Inicio</a>
             </li>
             <li class="nav-bar__nav-item">
-              <a href="#" class="nav-bar__nav-link">Alta</a>
+              <a href="alta.html" class="nav-bar__nav-link">Alta</a>
             </li>
             <li class="nav-bar__nav-item">
-              <a href="#" class="nav-bar__nav-link">Nosotros</a>
+              <a href="nosotros.html" class="nav-bar__nav-link">Nosotros</a>
             </li>
             <li class="nav-bar__nav-item">
-              <a href="#" class="nav-bar__nav-link">Contacto</a>
+              <a href="contacto.html" class="nav-bar__nav-link">Contacto</a>
             </li>
           </ul>
         </nav> <!-- .nav-bar -->
   
         <div class="search-bar">
-          <div class="search-bar__logo-container">Logo</div>
+          <div class="search-bar__logo-container"><img
+            src="../public/svg/iconos/marca-1.ico"
+            alt="alliance energy"
+            class="search-bar__logo-container__icon"
+          /></div>
           <form action="#" class="search-bar__form-container">
-            <label for="busqueda" class="search-bar__form-label">Buscar</label>
+            <label for="busqueda" class="search-bar__form-label"></label>
             <input type="search" class="search-bar__form-search" id="busqueda">
             <input type="submit" class="search-bar__form-submit" value="Buscar">
           </form>
@@ -46,11 +50,26 @@
       </header> <!-- main-header -->
 
       <main>
-        <h1>Contacto</h1>
+        <h1 class="h1-contact">Contacto</h1>
 
-        <form action="">
-
-        </form>
+        <form action="#" class="contact-form">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+          <button type="submit">Enviar<button>
       </main>
     
     <script type="module" src="/main.js"></script>

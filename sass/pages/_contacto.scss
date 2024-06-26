@@ -1,0 +1,63 @@
+body{
+    background-color: var(--color-primary);
+}
+/* Estilos para el encabezado principal */
+.contact-form {
+    max-width: 600px;
+    margin: auto; // Centrar horizontalmente
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  
+    .form-group {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+  
+      label {
+        margin-bottom: 5px;
+      }
+  
+      input,
+      textarea {
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        width: 100%;
+        box-sizing: border-box; // Para incluir el padding en el ancho total
+      }
+  
+      textarea {
+        resize: vertical;
+      }
+    }
+  
+    button[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box; // Para incluir el padding en el ancho total
+      margin-top: 10px; // Espacio entre el último campo y el botón
+    }
+  
+    button[type="submit"]:hover {
+      background-color: var(--color-secondary);
+    }
+  }
+
+  
+.h1-contact{
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 1rem;
+}
