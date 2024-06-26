@@ -1,6 +1,5 @@
 .footer {
-    background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-primary);
     padding: 20px 0;
   }
   
@@ -13,7 +12,6 @@
   
   .footer-logo img {
     width: 100px;
-    height: auto;
   }
   
   .footer-links ul {
@@ -28,7 +26,8 @@
   }
   
   .footer-links ul li a {
-    color: #fff;
+    color: var(--color-primary);
+
     text-decoration: none;
     font-size: 14px;
   }
@@ -46,3 +45,16 @@
     text-align: center;
     margin-top: 10px;
   }
+
+
+  @media (max-width: 576px) {
+    .footer-inner {
+      flex-direction: column; /* Coloca los elementos en columna en pantallas pequeñas */
+      text-align: center;
+    }
+  
+    .footer-links ul li {
+      display: block;
+      margin: 10px 0;
+    }
+    }

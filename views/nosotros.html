@@ -6,7 +6,91 @@
     <title>Proyecto Integrador - Nosotros</title>
 </head>
 <body>
-    <h1>Proyecto Integrador - Nosotros</h1>
-    
+    <header class="main-header">
+        <input type="checkbox" id="menu">
+  
+        <nav class="nav-bar">
+          <ul class="nav-bar__nav-list">
+            <li class="nav-bar__nav-item">
+              <a href="/index.html" class="nav-bar__nav-link">Inicio</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="alta.html" class="nav-bar__nav-link">Alta</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="contacto.html" class="nav-bar__nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav> <!-- .nav-bar -->
+  
+        <div class="search-bar">
+          <div class="search-bar__logo-container"><img
+            src="../public/svg/iconos/marca-1.ico"
+            alt="alliance energy"
+            class="search-bar__logo-container__icon"
+          /></div>
+          <form action="#" class="search-bar__form-container">
+            <label for="busqueda" class="search-bar__form-label"></label>
+            <input type="search" class="search-bar__form-search" id="busqueda">
+            <input type="submit" class="search-bar__form-submit" value="Buscar">
+          </form>
+          <div class="search-bar__carrito-container">C</div>
+          <div class="menu-toogle">
+            <label for="menu" class="menu-toogle__label">
+              <span class="menu-toogle__top-bread"></span>
+              <span class="menu-toogle__meat"></span>
+              <span class="menu-toogle__bottom-bread"></span>
+            </label>
+          </div>
+        </div> <!-- .search-bar -->
+  
+      </header> <!-- main-header -->
+
+      <div class="container">
+        <h1>Alliance Energy</h1>
+      </div>
+      <section class="container">
+        <h2>Nuestra Empresa</h2>
+        <p>Aliance Energy es una marca líder en el sector petrolero, comprometida con la excelencia en la calidad de sus productos y servicios. Fundada hace más de dos décadas, nuestra empresa se destaca por:</p>
+  
+        <ul class="services-list">
+          <li><span class="highlight">Estaciones de Servicio:</span> Ofrecemos una amplia red de estaciones de servicio en todo el país, asegurando conveniencia y accesibilidad para nuestros clientes.</li>
+          <li><span class="highlight">Venta de Aceites:</span> Comercializamos una variedad de aceites de alta calidad para motores, garantizando el rendimiento óptimo y la protección de los vehículos.</li>
+          <li><span class="highlight">Servicios Automotrices:</span> Realizamos mantenimientos preventivos y correctivos en nuestros talleres especializados, utilizando tecnología de punta y personal altamente capacitado.</li>
+          <li><span class="highlight">Compromiso Ambiental:</span> Nos comprometemos con prácticas sostenibles y el cuidado del medio ambiente en todas nuestras operaciones.</li>
+        </ul>
+  
+        <p>En Alliance Energy, nuestra misión es proporcionar soluciones integrales que superen las expectativas de nuestros clientes y contribuyan al desarrollo de comunidades prósperas.</p>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-logo">
+            <img src="../svg/iconos/marca-1.ico" alt="Logo Alliance Energy" />
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <p><strong>Contacto:</strong></p>
+            <p>Dirección: Av. Principal #1234</p>
+            <p>Teléfono: +123 456 789</p>
+            <p>Email: info@allianceenergy.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Alliance Energy. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    <script type="module" src="/main.js"></script>
 </body>
 </html>
